@@ -1,0 +1,14 @@
+var app=express() is a function
+app.get()
+app.listen()
+
+views is default directory for templates that express uses.
+
+app.use(express.static(__dirname + '/public'));
+//public stores all static files
+
+hbs.registerPartials(file_path) //where view is default libr.
+hbs.registerHelper(call_back)
+
+handlebar is a view engine
+partials are nothing but templates like header and footer that you are willing to keep common
