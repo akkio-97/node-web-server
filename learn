@@ -12,3 +12,27 @@ hbs.registerHelper(call_back)
 
 handlebar is a view engine
 partials are nothing but templates like header and footer that you are willing to keep common
+
+GIT:
+
+make sure to run this command after you do all of your code work.
+git commit -m "initial commit"
+
+1) create private key
+ls -al ~/.ssh
+ssh-keygen -t rsa -b 4096 -C 'akshay.nuthala@gmail.com'
+
+2) tell the computer the path to private key
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+3) adding key to git hub account
+clip < ~/.ssh/id_rsa.pub
+copy and paste this in github
+
+4) testing ssh connection
+ssh -T git@github.com
+
+5) To push an existing repository through the command line
+git remote add origin https://github.com/akkio-97/node-web-server.git
+git push -u origin master
